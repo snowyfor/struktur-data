@@ -1,18 +1,17 @@
 # Abstract Data Type
 
 ## ADT Titik
-**Type** POINT: 
-- **X**: integer, {absis}
-- **Y**: integer, {ordinat}
+_type_ POINT : < X : integer, { absis }
+               Y : integer, { ordinat }>
 
-**Function** `MakeTitik(x: integer, y: integer)`
-- **Kamus Lokal**:
-  - `T: Titik`
-- **Algoritma**:
-  - `T.absis <- x`
-  - `T.ordinat <- y`
+_function_ MakeTitik(x: integer, y: integer)
+    { kamus lokal }
+        T: Titik
+    { algoritma }
+        T.absis <- x
+        T.ordinat <- y
+        
+contoh: T1 <- MakeTitik(3,2)
 
-Contoh: `T1 <- MakeTitik(3,2)`
-
-**Function** `GetAbsis(T: Titik)`
-    -> `T.absis`
+_function_ GetAbsis(T: Titik)
+    -> T.absis
